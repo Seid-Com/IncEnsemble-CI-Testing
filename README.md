@@ -1,4 +1,4 @@
-# IncEnsemble: Efficient Machine Learning for Automated Software Testing
+# IncEnsemble: Efficient-Machine-Learning for Automated-Software-Testing
 
 An incremental machine learning framework for automated regression test prioritization in CI/CD environments. Combines adaptive ensemble learning with online model updates to prioritize tests, detect faults, and mitigate flaky test impact.
 
@@ -7,7 +7,7 @@ An incremental machine learning framework for automated regression test prioriti
 - **Incremental Ensemble Learning**: Static decision forest (100 trees, depth 8) + online linear corrector (SGD with balanced class weighting)
 - **13 Predictive Features**: Commit-level, code-level, historical test, change-impact, and stability features
 - **Flakiness-Aware Prioritization**: Tunable penalty factor for unstable tests
-- **Budget-Constrained Selection**: Optimized test selection under execution time constraints
+- **Budget-Constrained Selection**: Optimized-test selection under execution time constraints
 - **Active Learning**: Entropy/margin-based uncertainty sampling for label-efficient model updates
 - **SHAP Explainability**: Feature importance analysis for transparent decision-making
 - **Statistical Validation**: Wilcoxon signed-rank tests, multi-run evaluation, hyperparameter sensitivity analysis
@@ -212,15 +212,5 @@ python experiments/make_figures.py
 All published numbers are means over 10 seeds; CSVs in `results/` are the exact
 tables reported in the study.
 
-## Citation
 
-If you use this framework in your research, please cite:
-
-```bibtex
-@article{abdu2026incensemble,
-  title={Efficient Machine Learning Algorithms for Automated Software Testing},
-  author={Abdu, Seid Mehammed and Alam, Md Nasre and Khan, Shakir},
-  year={2026}
-}
-```
 
